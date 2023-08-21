@@ -1,0 +1,51 @@
+teams:
+  # The period, in seconds, before an invitation expires
+  invitation-expiry: 30
+
+duels:
+  # The world and coordinates to teleport kicked players from a match to
+  teleport-on-kick:
+    enabled: false
+    location: "assassins -1501 82 -254"
+  # The command that runs when a player is kicked out of a duel
+  commands-on-kick:
+    enabled: true
+    commands:
+    - "spawn $player$"
+
+  # Time in seconds that players will have to wait for before the match starts
+  time-before-match: 20
+
+  # Time in seconds from which the countdown will start
+  countdown-start-from: 5
+
+  # The delay in seconds before everyone gets teleported out of the arena
+  time-before-end: 5
+
+  betting-gui:
+    title: "Introdu suma de pariat"
+    rows: 2
+    items:
+      '#': "id:stained_glass_pane:7 name:_"
+
+      # Don't change the symbol for this one
+      'o': "id:emerald name:&aPariaza lore:&7Click_aici_pentru_a_paria|&7suma_introdusa!"
+    layout:
+      - "- - - - - - - - -"
+      - "# # # # o # # # #"
+
+  # A list of commands that are allowed while in duel
+  whitelist-commands: []
+
+# Format: <sound> <volume> <pitch> [repeat] [delay]
+# [repeat] = The amount of times the sound will repeat for
+# [delay] = The delay in between repetitions (in ticks)
+sound-effects:
+  duel-end-sound: "FIREWORK_LAUNCH 5 1 3 20"
+  countdown-sound: "ORB_PICKUP 5 2"
+  match-start-sound: "ANVIL_LAND 5 2 3 5"
+  duel-invite-receive-sound: "NOTE_PLING 5 2 3 5"
+  team-invite-receive-sound: "CLICK 5 1.5 3 5"
+  invite-decline-sound: "NOTE_PLING 5 0.5"
+  invite-accept-sound: "LEVEL_UP 5 0.6"
+  elimination-sound: "BAT_DEATH 5 0.5"

@@ -1,0 +1,7 @@
+name: AssassinsDuels
+version: ${project.version}
+main: io.github.idoomful.assassinsduels.DMain
+depend: [AssassinsCurrencyCore]
+softdepend: [PlaceholderAPI]
+authors: [iDoomful]
+description: Handles 1vs1s, prizes for said duels with the custom Assassins currency
